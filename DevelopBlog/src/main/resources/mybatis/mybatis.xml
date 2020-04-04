@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+	</settings>
+	<typeAliases>
+		<!-- guest -->
+		<!-- host -->
+		<typeAlias type="com.develop.blog.host.dto.LoginDTO" alias="LoginDTO"/>
+		<typeAlias type="com.develop.blog.host.vo.HostVO" alias="HostVO"/>
+	</typeAliases>
+	<mappers>
+		<!-- guest -->
+		<mapper resource="mapper/guest/comment/CommentMapper.xml" />
+		<mapper resource="mapper/guest/view/ViewMapper.xml" />
+		<!-- host -->
+		<mapper resource="mapper/host/login/LoginMapper.xml" />
+		<mapper resource="mapper/host/board/BoardMapper.xml" />
+	</mappers>
+</configuration>
